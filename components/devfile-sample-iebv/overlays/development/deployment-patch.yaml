@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-iebv
+  namespace: bflorkie-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:cbea4fd2c9bf22cebefc7e5786a542b79a4c4a848d46521ae5ce4238be2345a4
+        name: my-nodejs
+        resources: {}
+status: {}
