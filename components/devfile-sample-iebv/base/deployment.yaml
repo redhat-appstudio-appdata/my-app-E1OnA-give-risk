@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-iebv
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:bflorkie-tenant-devfile-sample-iebv
+      - image: quay.io/redhat-appstudio/user-workload@sha256:cbea4fd2c9bf22cebefc7e5786a542b79a4c4a848d46521ae5ce4238be2345a4
         name: my-nodejs
         ports:
         - containerPort: 3001
